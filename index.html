@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+<!--  <style>-->
+<!--    :root {-->
+<!--      color: #222;-->
+<!--      font-family: Arial;-->
+<!--    }-->
+
+<!--    .shop {-->
+<!--      max-width: 900px;-->
+<!--      margin: auto;-->
+<!--      display: grid;-->
+<!--      grid-template-columns: repeat(3, 1fr);-->
+<!--      gap: 1rem;-->
+<!--    }-->
+
+<!--    .product {-->
+<!--      border: 1px solid #ddd;-->
+<!--      border-radius: 5px;-->
+<!--      padding: 1rem;-->
+<!--    }-->
+
+<!--    .product h2 {-->
+<!--      margin: 0;-->
+<!--    }-->
+
+<!--    .price {-->
+<!--      font-size: 1.2rem;-->
+<!--      font-family: 'Courier New', Courier, monospace;-->
+<!--      font-weight: 700;-->
+<!--      letter-spacing: 1px;-->
+<!--    }-->
+
+<!--    button {-->
+<!--      padding: 0.5rem 1rem;-->
+<!--      background-color: #eee;-->
+<!--      border: none;-->
+<!--      border-radius: 5px;-->
+<!--    }-->
+
+<!--    button:hover {-->
+<!--      background-color: #ddd;-->
+<!--    }-->
+
+<!--    #basket-items {-->
+<!--      display: flex;-->
+<!--      flex-direction: column;-->
+<!--      align-items: center;-->
+<!--    }-->
+
+<!--    ul {-->
+<!--      list-style: none;-->
+<!--      padding: 0;-->
+<!--      border: 1px solid #ddd;-->
+<!--      border-radius: 5px;-->
+<!--      width: 300px;-->
+<!--      margin: auto;-->
+<!--    }-->
+
+<!--    li {-->
+<!--      text-decoration: underline;-->
+<!--      line-height: 1.8;-->
+<!--    }-->
+<!--  </style>-->
+
+<!--    <style>-->
+<!--        /* Style the buttons that are used to open and close the accordion panel */-->
+<!--        .accordion {-->
+<!--            background-color: #eee;-->
+<!--            color: #444;-->
+<!--            cursor: pointer;-->
+<!--            padding: 18px;-->
+<!--            width: 100%;-->
+<!--            text-align: left;-->
+<!--            border: none;-->
+<!--            outline: none;-->
+<!--            transition: 0.4s;-->
+<!--        }-->
+
+<!--        /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */-->
+<!--        .active, .accordion:hover {-->
+<!--            background-color: #ccc;-->
+<!--        }-->
+
+<!--        /* Style the accordion panel. Note: hidden by default */-->
+<!--        .panel {-->
+<!--            padding: 0 18px;-->
+<!--            background-color: white;-->
+<!--            display: none;-->
+<!--            overflow: hidden;-->
+<!--        }-->
+<!--        .panel.show {-->
+<!--            display: block;-->
+<!--        }-->
+<!--    </style>-->
+</head>
+<body>
+<!--  <h1>Угадай число</h1>-->
+<!--  <p>Загадано число от 1 до 10.</p>-->
+<!--  <p>Дается 5 попыток, чтобы отгадать.</p>-->
+
+<!--  <div>-->
+<!--    <button onclick=guessNum(1)>1</button>-->
+<!--    <button onclick=guessNum(2)>2</button>-->
+<!--    <button onclick=guessNum(3)>3</button>-->
+<!--    <button onclick=guessNum(4)>4</button>-->
+<!--    <button onclick=guessNum(5)>5</button>-->
+<!--    <button onclick=guessNum(6)>6</button>-->
+<!--    <button onclick=guessNum(7)>7</button>-->
+<!--    <button onclick=guessNum(8)>8</button>-->
+<!--    <button onclick=guessNum(9)>9</button>-->
+<!--    <button onclick=guessNum(10)>10</button>-->
+<!--  </div>-->
+<!--  <h1>Угадай загадку</h1>-->
+<!--  <p id="riddle"></p>-->
+<!--  <p><small>Дается 3 попытки.</small></p>-->
+<!--  <div>-->
+<!--    <input placeholder="ответ" autofocus>-->
+<!--    <button onclick="check()">Проверить</button>-->
+<!--  </div>-->
+<!--<div class="shop">-->
+<!--  <div class="product">-->
+<!--    <h2>Lenovo Yoga</h2>-->
+<!--    <p>Price: <span class="price">3000</span></p>-->
+<!--    <button onclick="addToBasket(1)">Buy</button>-->
+<!--  </div>-->
+<!--  <div class="product">-->
+<!--    <h2>Acer Aspire</h2>-->
+<!--    <p>Price: <span class="price">1800</span></p>-->
+<!--    <button onclick="addToBasket(2)">Buy</button>-->
+<!--  </div>-->
+<!--  <div class="product">-->
+<!--    <h2>Dell Vostro</h2>-->
+<!--    <p>Price: <span class="price">3400</span></p>-->
+<!--    <button onclick="addToBasket(3)">Buy</button>-->
+<!--  </div>-->
+<!--</div>-->
+<!--<hr>-->
+<!--<div class="basket">-->
+<!--  <h2 style="text-align: center;">Cart</h2>-->
+<!--  <ul id="basket-items"></ul>-->
+<!--  <h3 style="text-align: center;">Total price: <span id="total">0</span></h3>-->
+<!--</div>-->
+<!--    <div>-->
+<!--      <h1 class="gray">Hello DOM</h1>-->
+<!--      <button id="btn">Click me</button>-->
+<!--    </div>-->
+<!--    <section>-->
+<!--      <h2 class="title attention">Top section</h2>-->
+<!--    </section>-->
+<!--    <section>-->
+<!--      <h2 class="title gray">Second section</h2>-->
+<!--    </section>-->
+<!--    <section>-->
+<!--      <h2 class="title">Third section</h2>-->
+<!--    </section>-->
+
+<!--    <button id="toggle-btn">Toggle visibility</button>-->
+<!--    <div class="element">This is my DIV element.</div>-->
+<!--    <button class="accordion">Section 1</button>-->
+<!--    <div class="panel">-->
+<!--        <p>Lorem ipsum...</p>-->
+<!--    </div>-->
+
+<!--    <button class="accordion">Section 2</button>-->
+<!--    <div class="panel">-->
+<!--        <p>Lorem ipsum...</p>-->
+<!--    </div>-->
+
+<!--    <button class="accordion">Section 3</button>-->
+<!--    <div class="panel">-->
+<!--        <p>Lorem ipsum...</p>-->
+<!--    </div>-->
+
+    <button id="clicker1" data-clicked="0">click me</button>
+    <button id="clicker2" data-clicked="0">click me</button>
+
+  <script src="app.js"></script>
+</body>
+</html>
